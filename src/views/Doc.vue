@@ -15,7 +15,7 @@
                     <router-link to="/doc/dialog"> Dialog 组件</router-link>
                 </li>
                 <li>
-                    <router-link to="/doc/tabs"> Tabs组件 组件</router-link>
+                    <router-link to="/doc/tabs"> Tabs组件</router-link>
                 </li>
             </ol>
         </aside>
@@ -100,8 +100,8 @@ aside {
         }
     }
 
-    main{
-        overflow:auto;
+    main {
+        overflow: auto;
     }
 }
 </style>
