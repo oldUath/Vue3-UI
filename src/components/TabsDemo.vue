@@ -1,6 +1,6 @@
 <template>
 <div>
-    Switch的文档
+    Tabs
 
 </div>
 </template>

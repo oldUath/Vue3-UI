@@ -100,8 +100,8 @@ aside {
         }
     }
 
-    main {
-        overflow: auto;
+    main{
+        overflow:auto;
     }
 }
 </style>
