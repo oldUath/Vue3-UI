@@ -1,7 +1,11 @@
 <template>
-<div>
-    <button>
-        <slot />
-    </button>
-</div>
+<button v-bind="rest">
+    <slot />
+</button>
 </template>
+
+<script lang="ts">
+export default {
+
+}
+</script>
