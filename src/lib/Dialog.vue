@@ -9,8 +9,8 @@
                 <p>第二行字</p>
             </main>
             <footer>
-                <Button level="main">OK</Button>
-                <Button>Cancel</Button>
+                <Button @click="ok" level="main">OK</Button>
+                <Button @click="cancel">Cancel</Button>
             </footer>
         </div>
     </div>
@@ -28,6 +28,12 @@ export default {
         closeOnClickOverlay: {
             type: Boolean,
             default: true,
+        },
+        ok: {
+            type: Function,
+        },
+        cancle: {
+            type: Function,
         }
     },
     components: {
@@ -41,10 +47,22 @@ export default {
             if (props.closeOnClickOverlay) {
                 close()
             }
+        };
+        const ok = () => {
+            if (props.ok && props.ok() !== false) {
+                close();
+            }
+        };
+        const cancel = () => {
+            context.emit('cancle')
+            close();
         }
+        const cancle = () => {}
         return {
             close,
-            onClickOverlay
+            onClickOverlay,
+            ok,
+            cancel,
         }
     }
 }
