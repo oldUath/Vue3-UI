@@ -1,19 +1,38 @@
 <template>
 <div>
     <div>Button示例</div>
-    <h1>示例1</h1>
+    <h1>类别</h1>
     <div>
-        <Button>你好</Button>
-        <Button theme="button">你好</Button>
-        <Button theme="link">你好</Button>
-        <Button theme="text">你好</Button>
+        <Button theme="button">默认按钮</Button>
+        <Button theme="link">Link连接</Button>
+        <Button theme="text">文本</Button>
     </div>
-    <h1>示例2</h1>
+    <h1>尺寸</h1>
     <div>
+        <dir>
+            <Button size="big">大按钮</Button>
+            <Button>普通按钮</Button>
+            <Button size="small">小按钮</Button>
+        </dir>
 
-        <Button size="big">大大大</Button>
-        <Button>普通</Button>
-        <Button size="small">小小小</Button>
+    </div>
+    <h1>示例3</h1>
+    <div>
+        <dir>
+            <Button level="main">主要按钮</Button>
+            <Button>普通按钮</Button>
+            <Button level="danger">危险按钮</Button>
+        </dir>
+        <dir>
+            <Button theme="link" level="main">主要链接按钮</Button>
+            <Button theme="link">普通链接按钮</Button>
+            <Button theme="link" level="danger">危险链接按钮</Button>
+        </dir>
+        <dir>
+            <Button theme="text" level="main">主要文字按钮</Button>
+            <Button theme="text">普通文字按钮</Button>
+            <Button theme="text" level="danger">危险文字按钮</Button>
+        </dir>
     </div>
 
 </div>
