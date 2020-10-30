@@ -14,6 +14,16 @@
             <Button>普通按钮</Button>
             <Button size="small">小按钮</Button>
         </dir>
+        <dir>
+            <Button theme="link" size="big">大连接</Button>
+            <Button theme="link">普通连接</Button>
+            <Button theme="link" size="small">小连接</Button>
+        </dir>
+        <dir>
+            <Button theme="text" size="big">大文本</Button>
+            <Button theme="text">普通文本</Button>
+            <Button theme="text" size="small">小文本</Button>
+        </dir>
     </div>
 
     <h1>等级</h1>
@@ -24,22 +34,29 @@
             <Button level="danger">危险按钮</Button>
         </dir>
         <dir>
-            <Button theme="link" level="main">主要链接按钮</Button>
-            <Button theme="link">普通链接按钮</Button>
-            <Button theme="link" level="danger">危险链接按钮</Button>
+            <Button theme="link" level="main">主要链接</Button>
+            <Button theme="link">普通链接</Button>
+            <Button theme="link" level="danger">危险链接</Button>
         </dir>
         <dir>
-            <Button theme="text" level="main">主要文字按钮</Button>
-            <Button theme="text">普通文字按钮</Button>
-            <Button theme="text" level="danger">危险文字按钮</Button>
+            <Button theme="text" level="main">主要文字</Button>
+            <Button theme="text">普通文字</Button>
+            <Button theme="text" level="danger">危险文字</Button>
         </dir>
     </div>
 
     <h1>禁用</h1>
     <div>
-        <Button disabled>禁用按钮</Button>
-        <Button theme="link" disabled>禁用链接按钮</Button>
-        <Button theme="text" disabled>禁用按钮</Button>
+        <dir>
+            <Button disabled>禁用按钮</Button>
+            <Button theme="link" disabled>禁用链接按钮</Button>
+            <Button theme="text" disabled>禁用文本按钮</Button>
+        </dir>
+    </div>
+    <h1>状态</h1>
+    <div>
+        <Button loading>加载中</Button>
+        <Button>加载完毕</Button>
     </div>
 
 </div>
