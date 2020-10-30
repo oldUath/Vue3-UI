@@ -2,7 +2,7 @@
 <div>Dialog 示例</div>
 <h1>弹窗示例</h1>
 <Button @click="toggle">toogle</Button>
-<Dialog v-model:visible="x" />
+<Dialog v-model:visible="x" :closeOnClickOverlay="false" />
 </template>
 
 <script lang="ts">
