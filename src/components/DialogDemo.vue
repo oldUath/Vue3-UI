@@ -2,7 +2,15 @@
 <div>Dialog 示例</div>
 <h1>弹窗示例</h1>
 <Button @click="toggle">toogle</Button>
-<Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="f1" :cancle="f2"></Dialog>
+<Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="f1" :cancle="f2">
+    <template v-slot:title>
+        <h2>具名插槽</h2>
+    </template>
+    <template v-slot:content>
+        <p>第一行</p>
+        <p>第八行</p>
+    </template>
+</Dialog>
 </template>
 
 <script lang="ts">
