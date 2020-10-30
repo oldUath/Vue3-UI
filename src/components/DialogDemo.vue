@@ -1,14 +1,30 @@
 <template>
-<div>
-    <Dialog />
-</div>
+<div>Dialog 示例</div>
+<h1>弹窗示例</h1>
+<Button @click="toggle">toogle</Button>
+<Dialog :visible="x" />
 </template>
 
 <script lang="ts">
+import {
+    ref
+} from 'vue'
+import Button from '../lib/Button.vue'
 import Dialog from '../lib/Dialog.vue'
 export default {
     components: {
-        Dialog
+        Dialog,
+        Button,
+    },
+    setup() {
+        const x = ref(false);
+        const toggle = () => {
+            x.value = !x.value
+        };
+        return {
+            x,
+            toggle
+        }
     }
 }
 </script>
