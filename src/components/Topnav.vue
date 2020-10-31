@@ -52,7 +52,7 @@ $color:#0c716a;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index: 1200;
     justify-content: center;
     align-items: center;
 
