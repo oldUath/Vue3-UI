@@ -41,6 +41,8 @@ $color:#0c716a;
 
 .topnavAndBanner {
     background: linear-gradient(145deg, rgba(227, 255, 253, 1) 0%, rgba(183, 233, 230, 1) 100%);
+    // 调节背景色的形状
+    clip-path: ellipse(70% 60% at 50% 40%)
 }
 
 .features {
