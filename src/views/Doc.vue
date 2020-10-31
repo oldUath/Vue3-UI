@@ -113,7 +113,7 @@ aside {
             }
 
             .router-link-active {
-                background-color: red;
+                background: white;
             }
 
         }
