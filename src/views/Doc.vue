@@ -103,6 +103,7 @@ aside {
 
     >h2 {
         margin-bottom: 4px;
+        padding: 0 16px;
     }
 
     >ol {
@@ -113,7 +114,7 @@ aside {
             }
 
             .router-link-active {
-                background-color: red;
+                background-color: white;
             }
 
         }
