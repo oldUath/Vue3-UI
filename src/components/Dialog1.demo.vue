@@ -4,15 +4,18 @@
 <template>
 <div>
     <Button @click="toggle">打开对话框</Button>
+    <!-- 复制此处-开始 -->
     <Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="f1" :cancel="f2">
         <template v-slot:content>
-            <strong>hi</strong>
-            <div>hi2</div>
+            <strong>这是内容</strong>
+            <div>你好</div>
         </template>
         <template v-slot:title>
             <strong>加粗的标题</strong>
         </template>
     </Dialog>
+    <!-- 复制此处-结束 -->
+
 </div>
 </template>
 

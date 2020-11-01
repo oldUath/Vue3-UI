@@ -24,7 +24,7 @@ export default {
         const showDialog = () => {
             openDialog({
                 title: h('strong', {}, '标题'),
-                content: '你好',
+                content: '这是封装好的按钮，结构简洁',
                 ok() {
                     console.log('ok')
                 },
