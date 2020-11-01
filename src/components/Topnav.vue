@@ -47,12 +47,12 @@ $color:#0c716a;
 .topnav {
     color: $color;
     display: flex;
-    padding: 16px;
+    padding: 5px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1200;
+    z-index: 20;
     justify-content: center;
     align-items: center;
 
@@ -70,6 +70,8 @@ $color:#0c716a;
         display: flex;
         white-space: nowrap;
         flex-wrap: nowrap;
+        padding: 0 50px;
+        font-size: 32px;
 
         >li {
             margin: 0 1em;

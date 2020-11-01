@@ -12,7 +12,7 @@
                     <router-link to="/doc/install">安装</router-link>
                 </li>
                 <li>
-                    <router-link to="/doc/get-started">开始使用</router-link>
+                    <router-link to="/doc/get-started">使用规范</router-link>
                 </li>
             </ol>
             <h2>组件列表</h2>
@@ -62,6 +62,13 @@ export default {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    overflow: scroll;
+    background: #FFFFFF;
+
+    @media (min-width:500px) {
+        margin-left: 100px;
+        padding: 0 50px;
+    }
 
     >.nav {
         flex-shrink: 0;
@@ -89,17 +96,19 @@ export default {
         flex-grow: 1;
         padding: 16px;
         background: white;
+
     }
 }
 
 aside {
-    background: lightblue;
-    width: 150px;
+    background: #D7EFF1;
+    width: 250px;
     position: fixed;
     top: 0;
     left: 0;
-    padding-top: 70px;
+    padding-top: 80px;
     height: 100%;
+    z-index: 1;
 
     >h2 {
         margin-bottom: 4px;
@@ -110,7 +119,7 @@ aside {
         >li {
             a {
                 display: block;
-                padding: 4px 16px;
+                padding: 4px 40px;
             }
 
             .router-link-active {
